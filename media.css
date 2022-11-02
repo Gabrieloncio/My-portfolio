@@ -1,0 +1,74 @@
+@media (max-width: 1050px) {
+    #menubutton {
+        display: block;
+        width: 30px;
+        filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(233deg) brightness(111%) contrast(107%);
+        cursor: pointer;
+    }
+
+    .links {
+        transition: 0.5s;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        z-index: 100;
+    }
+
+    .links a{
+        font-size: 35px;
+    }
+    .openmenu {
+        left: 0;
+    }
+
+    .one,
+    .two{
+        width: 100%;
+    }
+
+    .title{
+        padding: 55px 5px 5px 5px;
+    }
+
+    .textcontainer{
+        padding: 10px 10px 10px 10px;
+        align-items: inherit;
+        word-spacing: 2px;
+        line-height: 1.7;
+    }
+
+    .soft,
+    .contactcard{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .soft img{
+        width: 100px;
+    }
+
+    .object{
+        width: 200px;
+        height: 200px;
+    }
+
+    .home h1{
+        font-size: 40px;
+        line-height: 1;
+        overflow-y: hidden;
+    }
+
+    .home::before,
+    .home::after{
+        font-size: 28px;
+    }
+}

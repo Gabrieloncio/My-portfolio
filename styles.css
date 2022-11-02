@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    scrollbar-width: none;
+}
+
+
+section{
+    overflow-x: hidden;
+}
+
+a:link,
+a:visited{
+    transition: .5s; 
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+.navbarcontainer{
+    display: flex;
+    flex-direction: row;
+    padding: 0 8%;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+/* Logo */
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+}
+.logo::before{
+    content:"<";
+    color:#FCA311;
+}
+.logo::after{
+    content:"/>";
+    color:#FCA311;
+}
+
+/* Links */
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ACACAC;
+}
+.links li{
+    padding-right:10px ;
+}
+.links a{
+    color: #ACACAC;
+    transition: .5s;
+}
+.active a{
+    transition: .5s;
+    color: white;
+}
+.backcolour{
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .8);
+}
+.navbarlink a:hover{
+    color:#FCA311;
+    transition: .5s;
+}
+
+/* Menu button */
+#menubutton{
+    display: none;
+}
+
+
+/* Home */
+
+.profile{
+    background-image: url(Images/profile1.JPG);
+    background-size: cover;
+    transform: rotate(-30deg);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.background{
+    background-image: url(Images/mohammad-rahmani-oXlXu2qukGE-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
+.home h1{
+    color: #FCA311;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.home::before{
+    content:"Hi!";
+    color: white;
+    font-size: 33px;
+}
+.home::after{
+    content: "Junior Developer";
+    color: white;
+    font-size: 33px;
+}
+/* Sections */
+.title{
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 70px 5px 5px 5px;
+}
+.subtitle{
+    font-size: 20px;
+    padding: 5px;
+}
+.about h3::before{
+    content: "Automation technician and Junior developer.";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Containers */
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 7% 0 7%;
+    background-color: #F2F2F2;
+    height: 100%;
+    /* width: 100%; */
+    justify-content: center;
+}
+.secondcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0; 
+}
+.thirdcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 5% 40px 5%;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.one,
+.two{
+    width: 50%;
+    height: 100%;
+}
+
+.homecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    align-items: inherit;
+    justify-content: center;
+    word-spacing: 2px;
+    line-height: 1.7;
+}
+
+
+/* Project cards */
+.card{
+    aspect-ratio: 5/7 ;
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.card .image{
+    background-image: url(Images/mohammad-rahmani-oXlXu2qukGE-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    height: 40%;
+    align-items: flex-end;
+    
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card .text{
+    height: 40%;
+    transition: 0.5s;
+    padding: 3% 5% 10% 5%;
+    display: flex;
+    flex-direction: column;
+}
+.card .type{
+    color: #eeeeee;
+    font-size: 15px;
+    line-height: 0.7;
+    padding: 5%;
+    width: 100%;
+}
+.card .name{
+    font-weight: bold;
+}
+.card .description{
+    line-height: 1.3;
+}
+
+.card .link{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card .link a img{
+    width: 35px;
+}
+
+.skill,
+.contactcard{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 20px;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
+.tech img{
+    width: 90px;
+    padding: 5px;
+}
+.soft img{
+    width: 180px;
+    padding: 5px;
+}
+.contactcard img{
+    width: 90px;
+}
+.skill a,
+.link a,
+.contactcard a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 17px;
+}
+.developmentad{
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #ACACAC;
+    background-color: rgba(0, 0, 0, .8);
+    transition: .7s;
+}
+.developmentad:hover{
+    color: #FCA311;
+    transition: .5s;
+}
+
+
+
+footer{
+    height: 60px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
